@@ -81,3 +81,27 @@
 
 
 /*FIN SLIDER*/
+/*algunas pruebas que estoy haciendo para las imagenes*/
+
+
+  
+.contenedor1 {
+    position: relative;
+    height: 290px;
+    width: 290px;
+    margin: 50px 20px;
+    float: center;
+    
+    
+  }
+  
+  .contenedor1 img {
+    position: absolute;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+  }
+  
+  .contenedor1 img.top:hover {
+    opacity: 0;
+  }
