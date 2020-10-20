@@ -1,108 +1,237 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
 /*SLIDER*/
-.slider{
-    position: relative;
-    display:95%;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 0;
-    overflow: hidden;
-   
+.slider {
+  position: relative;
+  display: 95%;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  overflow: hidden;
 }
 
-.slider li a:hover{
-    background-color: transparent;
+.slider li a:hover {
+  background-color: transparent;
 }
 
-.slider ul{
-    display:flex;
-    padding: 0;
-    width: 200%;
-    animation: cambio 10s infinite;
-    animation-direction: alternate;
+.slider ul {
+  display: flex;
+  padding: 0;
+  width: 200%;
+  animation: cambio 10s infinite;
+  animation-direction: alternate;
 }
 
-
-.slider li{
-    width: 100%;
-    list-style: none;
-    
+.slider li {
+  width: 100%;
+  list-style: none;
 }
 
-.slider img{
-    width: 100%;
+.slider img {
+  width: 100%;
 }
 
-.slider h1{
-    position: relative;
-    display: flex;
-    align-items: center; 
-    align-content: center;
-    font-size: 2.3rem;
-    margin-left: 35%;
-    border-radius: 10px;
-    height: 90px;
-    width: 30%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+.slider h1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  font-size: 2.3rem;
+  margin-left: 35%;
+  border-radius: 10px;
+  height: 90px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-@keyframes cambio{
-    /*0% {margin-left: 0%;}
-    35% {margin-left: 0%;}
+@keyframes cambio {
+  /*0% {margin-left: 0%;}
+      35% {margin-left: 0%;}
+  
+      40% {margin-left: -100%;}
+      70% {margin-left: -100%;}
+  
+      75% {margin-left: -100%;}
+      100% {margin-left: -100%;}
+  */
+  0% {
+    margin-left: 0%;
+  }
+  45% {
+    margin-left: 0%;
+  }
 
-    40% {margin-left: -100%;}
-    70% {margin-left: -100%;}
-
-    75% {margin-left: -100%;}
-    100% {margin-left: -100%;}
-*/
-    0% {margin-left: 0%;}
-    45% {margin-left: 0%;}
-
-    50% {margin-left: -100%;}
-    100% {margin-left: -100%;} 
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
 }
 
-.image{
-    height: 100%;
-    background: url("../img/nadador.jpg");
-    background-size: 100% 100%;
+.image {
+  height: 100%;
+  background: url("../img/nadador.jpg");
+  background-size: 100% 100%;
+}
+.image2 {
+  height: 100%;
+  background: url("../img/bici.jpg");
+  background-size: 100% 100%;
+}
+.contenedor {
+  width: 60%;
+  height: 400px;
+  margin-left: 20%;
 }
 
-.contenedor{
-
-    width: 60%;
-    height: 400px;
-    margin-left: 20%;
-
+/*Section id cliente section*/
+.vc_col-sm-12 {
+  width: 100%;
+}
+.pm-column-container .pm_column-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.title {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 1.5rem 0 2.3rem 7.5rem;
+}
+.title-section {
+  padding-top: 40px;
+}
+.title-section {
+  line-height: 24px;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+}
+.pm-column-inner {
+  display: flex;
+}
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+.subtitulo,
+.price {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #323233;
+  padding-left: 1rem;
+}
+.description,
+.subtitulo {
+  padding-left: 1rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.description {
+  color: #575859;
+}
+.price {
+  padding-top: 0.4rem;
+}
+.container-cards .card {
+  position: relative;
+  min-width: 330px;
+  height: 410px;
+  margin: 1.5rem;
+  box-shadow: -3px 0px 8px 0px rgba(217, 213, 217, 1);
+  border-radius: 10px;
+}
+/* las dimensiones que va a tomar la imagen*/
+.top {
+  min-width: 330px;
+  height: 300px;
+}
+.comprar,
+.star {
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+}
+/*caja superior con efecto de box-shadow*/
+.container-cards .card .box {
+  position: absolute;
+  border-radius: 12px;
+  box-shadow: -3px 0px 8px 0px rgb(184, 187, 182);
+  /* box-shadow: 0 20px 50px rgba(185, 185, 185, 0.5);*/
+  transition: 0.5%;
+}
+/*estilo para los botones*/
+.bottom1,
+.bottom2 {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+}
+.botom-black,
+.botom-white {
+  margin-top: 8px;
+  margin-left: 20px;
+  display: inline-block;
+}
+.bottom1 {
+  border: 1px solid black;
+  color: white;
+  background-color: #000;
+}
+.bottom2 {
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+}
+.content {
+  padding: 1.5rem;
+}
+.container-cards .card .box:hover {
+  transform: translateY(-35px);
+  box-shadow: 0 40px 70px rgba(33, 44, 33, 0.5);
 }
 
+.content .card-stars {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.content .card-stars:hover {
+  opacity: 0;
+}
 
 /*FIN SLIDER*/
 
 /*algunas pruebas que estoy haciendo para las imagenes*/
 
-
-  
 .contenedor1 {
-    position: relative;
-    height: 290px;
-    width: 290px;
-    margin: 50px 20px;
-    float: center;
-    
-    
-  }
-  
-  .contenedor1 img {
-    position: absolute;
-    left: 0;
-    transition: opacity 0.5s ease-in-out;
-    
-  }
-  
-  .contenedor1 img.top:hover {
-    opacity: 0;
-  }
+  position: relative;
+  height: 290px;
+  width: 290px;
+  margin: 50px 20px;
+  float: center;
+}
+
+.contenedor1 img {
+  position: absolute;
+  left: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.contenedor1 img.top:hover {
+  opacity: 0;
+}
