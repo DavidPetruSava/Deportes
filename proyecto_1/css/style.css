@@ -21,9 +21,17 @@ html {
   width: 100%;
   align-items: center;
   align-content: center;
+<<<<<<< HEAD
+
+}
+.top-slider{
+  height: 40rem;
+}
+=======
 
 }
 
+>>>>>>> main
 .slider li a:hover{
   background-color: transparent;
 }
@@ -55,6 +63,54 @@ html {
 
   50% {margin-left: -100%;}
   100% {margin-left: -100%;} 
+<<<<<<< HEAD
+}
+
+.image{
+  height: 100%;
+  background: url("../img/Deportes/nadador.jpg");
+  background-size: 100% 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.image2{
+  height: 100%;
+  background: url("../img/Deportes/bici.jpg");
+  background-size: 100% 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contenedor{
+  width: 100%;
+  height: 400px;
+  /*margin-left: 30%;*/
+
+}
+
+.titulo{
+  position: absolute;
+  display: flex;
+  align-items: center; 
+  align-content: center;
+  font-size: 2.3rem;
+  margin-left: 35%;
+  margin-right: 35%;
+  border-radius: 10px;
+  height: 90px;
+  width: 30%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 3;
+  margin-top: 100px;
+}
+
+.titulo h1{
+  padding-left: 30%;
+
+}
+=======
 }
 
 .image{
@@ -104,6 +160,7 @@ html {
 
 /*FIN DE SLIDER*/
 
+>>>>>>> main
 /*Section id cliente section*/
 .vc_col-sm-12 {
   width: 100%;
@@ -245,4 +302,128 @@ html {
 
 .contenedor1 img.top:hover {
   opacity: 0;
+}
+
+/*footer*/ 
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+}
+
+.caja1{
+  width: 100%;
+  background-color: rgb(224, 221, 221);
+  display: inline-flex;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.caja11 li:hover{
+  color: rgb(131, 131, 131);
+}
+.caja1 img{
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+.caja11 li{
+  display: inline;
+  font-size: 15px;
+  padding: 30px;
+  margin-left: 135px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+/*CAJA 2*/
+.caja2{
+  width: 100%;
+  background-color: black;
+}
+.caja2 img{
+  width: 25px;
+  height: 30px;
+}
+.caja2 span{
+  color: white;
+}
+.tabla21{
+  width: 100%;
+}
+.tabla22{
+  width: 70%;
+}
+.tabla22 span:hover{
+  color: rgb(131, 131, 131);
+}
+.tabla23{
+  padding-left: 36%;
+  
+}
+.filas{
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.filas2{
+  padding: 15px;
+  padding-top: 20px;
+  text-align: center;
+}
+.filas2 img{
+  width: 30px;
+  height: 35px;
+  cursor: pointer;
+}
+/*CAJA 3*/
+.caja3{
+  width: 100%;
+  background-color: rgb(224, 221, 221);
+}
+.caja33{
+  width: 100%;
+  padding: 10px;
+}
+.caja3 td{
+  padding: 5px;
+}
+.caja3 h2{
+  font-size:20px;
+  font: 10px;
+  font-weight: bold;
+}
+.letraPequeña{
+  font-size: 15px;
+  cursor: pointer;
+}
+.caja3 img{
+  width: 35px;
+  height: 30px;
+}
+.pagos{
+  text-align: right;
+  padding-top: 100px;
+  padding-left: 40%;
+}
+.tabla31 td:hover{
+  color: rgb(131, 131, 131);
+}
+.politicas{
+  width: 100%;
+  border-top: 1px solid rgb(131, 131, 131);
+  font-style: oblique;
+  font-weight: bold;
+}
+.condiciones{
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: 12px;
+  padding-right: 22px;
+}
+.condiciones td:hover{
+  color: rgb(131, 131, 131);
 }
