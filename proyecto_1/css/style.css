@@ -2,96 +2,107 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 html {
   font-size: 62.5%;
 }
 /*SLIDER*/
-.slider {
-  position: relative;
-  display: 95%;
+.slider{
+  position: absolute;
+  /*display: flex;
+  display:95%;*/
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
   overflow: hidden;
+  z-index: 0;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+
 }
 
-.slider li a:hover {
+.slider li a:hover{
   background-color: transparent;
 }
 
-.slider ul {
-  display: flex;
+.slider ul{
+  display:flex;
   padding: 0;
   width: 200%;
   animation: cambio 10s infinite;
   animation-direction: alternate;
 }
 
-.slider li {
+
+.slider li{
   width: 100%;
-  list-style: none;
+  list-style: none;    
+  
 }
 
-.slider img {
+.slider img{
   width: 100%;
 }
 
-.slider h1 {
-  position: relative;
+
+
+@keyframes cambio{
+  0% {margin-left: 0%;}
+  45% {margin-left: 0%;}
+
+  50% {margin-left: -100%;}
+  100% {margin-left: -100%;} 
+}
+
+.image{
+  height: 100%;
+  background: url("../img/nadador.jpg");
+  background-size: 100% 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.image2{
+  height: 100%;
+  background: url("../img/bici.jpg");
+  background-size: 100% 100%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contenedor{
+  width: 100%;
+  height: 400px;
+  /*margin-left: 30%;*/
+
+}
+
+.titulo{
+  position: absolute;
   display: flex;
-  align-items: center;
+  align-items: center; 
   align-content: center;
   font-size: 2.3rem;
   margin-left: 35%;
+  margin-right: 35%;
   border-radius: 10px;
   height: 90px;
   width: 30%;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  z-index: 3;
+  margin-top: 100px;
 }
 
-@keyframes cambio {
-  /*0% {margin-left: 0%;}
-      35% {margin-left: 0%;}
-  
-      40% {margin-left: -100%;}
-      70% {margin-left: -100%;}
-  
-      75% {margin-left: -100%;}
-      100% {margin-left: -100%;}
-  */
-  0% {
-    margin-left: 0%;
-  }
-  45% {
-    margin-left: 0%;
-  }
+.titulo h1{
+  padding-left: 30%;
 
-  50% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: -100%;
-  }
 }
 
-.image {
-  height: 100%;
-  background: url("../img/nadador.jpg");
-  background-size: 100% 100%;
-}
-.image2 {
-  height: 100%;
-  background: url("../img/bici.jpg");
-  background-size: 100% 100%;
-}
-.contenedor {
-  width: 60%;
-  height: 400px;
-  margin-left: 20%;
-}
+/*FIN DE SLIDER*/
 
 /*Section id cliente section*/
 .vc_col-sm-12 {
