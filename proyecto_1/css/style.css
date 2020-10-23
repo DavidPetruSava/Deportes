@@ -8,10 +8,8 @@ html {
   font-size: 62.5%;
 }
 /*SLIDER*/
-.slider{
+.slider {
   position: absolute;
-  /*display: flex;
-  display:95%;*/
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -21,52 +19,48 @@ html {
   width: 100%;
   align-items: center;
   align-content: center;
-<<<<<<< HEAD
-
 }
-.top-slider{
+.top-slider {
   height: 40rem;
 }
-=======
-
-}
-
->>>>>>> main
-.slider li a:hover{
+.slider li a:hover {
   background-color: transparent;
 }
 
-.slider ul{
-  display:flex;
+.slider ul {
+  display: flex;
   padding: 0;
   width: 200%;
   animation: cambio 10s infinite;
   animation-direction: alternate;
 }
 
-
-.slider li{
+.slider li {
   width: 100%;
-  list-style: none;    
-  
+  list-style: none;
 }
 
-.slider img{
+.slider img {
   width: 100%;
 }
 
+@keyframes cambio {
+  0% {
+    margin-left: 0%;
+  }
+  45% {
+    margin-left: 0%;
+  }
 
-
-@keyframes cambio{
-  0% {margin-left: 0%;}
-  45% {margin-left: 0%;}
-
-  50% {margin-left: -100%;}
-  100% {margin-left: -100%;} 
-<<<<<<< HEAD
+  50% {
+    margin-left: -100%;
+  }
+  100% {
+    margin-left: -100%;
+  }
 }
 
-.image{
+.image {
   height: 100%;
   background: url("../img/Deportes/nadador.jpg");
   background-size: 100% 100%;
@@ -74,7 +68,7 @@ html {
   margin-right: 25%;
 }
 
-.image2{
+.image2 {
   height: 100%;
   background: url("../img/Deportes/bici.jpg");
   background-size: 100% 100%;
@@ -82,17 +76,16 @@ html {
   margin-right: 25%;
 }
 
-.contenedor{
+.contenedor {
   width: 100%;
   height: 400px;
   /*margin-left: 30%;*/
-
 }
 
-.titulo{
+.titulo {
   position: absolute;
   display: flex;
-  align-items: center; 
+  align-items: center;
   align-content: center;
   font-size: 2.3rem;
   margin-left: 35%;
@@ -106,61 +99,9 @@ html {
   margin-top: 100px;
 }
 
-.titulo h1{
+.titulo h1 {
   padding-left: 30%;
-
 }
-=======
-}
-
-.image{
-  height: 100%;
-  background: url("../img/nadador.jpg");
-  background-size: 100% 100%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.image2{
-  height: 100%;
-  background: url("../img/bici.jpg");
-  background-size: 100% 100%;
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-.contenedor{
-  width: 100%;
-  height: 400px;
-  /*margin-left: 30%;*/
-
-}
-
-.titulo{
-  position: absolute;
-  display: flex;
-  align-items: center; 
-  align-content: center;
-  font-size: 2.3rem;
-  margin-left: 35%;
-  margin-right: 35%;
-  border-radius: 10px;
-  height: 90px;
-  width: 30%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  z-index: 3;
-  margin-top: 100px;
-}
-
-.titulo h1{
-  padding-left: 30%;
-
-}
-
-/*FIN DE SLIDER*/
-
->>>>>>> main
 /*Section id cliente section*/
 .vc_col-sm-12 {
   width: 100%;
@@ -304,13 +245,19 @@ html {
   opacity: 0;
 }
 
-/*footer*/ 
-@keyframes modal{
-	from{top:-330px; opacity:0;}
-	to{top:0; opacity:1;}
+/*footer*/
+@keyframes modal {
+  from {
+    top: -330px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
 }
 
-.caja1{
+.caja1 {
   width: 100%;
   background-color: rgb(224, 221, 221);
   display: inline-flex;
@@ -318,15 +265,15 @@ html {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.caja11 li:hover{
+.caja11 li:hover {
   color: rgb(131, 131, 131);
 }
-.caja1 img{
+.caja1 img {
   width: 45px;
   height: 45px;
   text-align: center;
 }
-.caja11 li{
+.caja11 li {
   display: inline;
   font-size: 15px;
   padding: 30px;
@@ -336,86 +283,85 @@ html {
   cursor: pointer;
 }
 /*CAJA 2*/
-.caja2{
+.caja2 {
   width: 100%;
   background-color: black;
 }
-.caja2 img{
+.caja2 img {
   width: 25px;
   height: 30px;
 }
-.caja2 span{
+.caja2 span {
   color: white;
 }
-.tabla21{
+.tabla21 {
   width: 100%;
 }
-.tabla22{
+.tabla22 {
   width: 70%;
 }
-.tabla22 span:hover{
+.tabla22 span:hover {
   color: rgb(131, 131, 131);
 }
-.tabla23{
+.tabla23 {
   padding-left: 36%;
-  
 }
-.filas{
+.filas {
   padding: 15px;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
 }
-.filas2{
+.filas2 {
   padding: 15px;
   padding-top: 20px;
   text-align: center;
 }
-.filas2 img{
+.filas2 img {
   width: 30px;
   height: 35px;
   cursor: pointer;
 }
 /*CAJA 3*/
-.caja3{
+.caja3 {
   width: 100%;
   background-color: rgb(224, 221, 221);
 }
-.caja33{
+.caja33 {
   width: 100%;
   padding: 10px;
 }
-.caja3 td{
+.caja3 td {
   padding: 5px;
 }
-.caja3 h2{
-  font-size:20px;
+.caja3 h2 {
+  font-size: 20px;
   font: 10px;
   font-weight: bold;
 }
-.letraPequeña{
+.letraPequeña {
   font-size: 15px;
   cursor: pointer;
 }
-.caja3 img{
+.caja3 img {
   width: 35px;
   height: 30px;
 }
-.pagos{
+.pagos {
   text-align: right;
   padding-top: 100px;
   padding-left: 40%;
 }
-.tabla31 td:hover{
+.tabla31 td:hover {
   color: rgb(131, 131, 131);
 }
-.politicas{
+.politicas {
   width: 100%;
   border-top: 1px solid rgb(131, 131, 131);
   font-style: oblique;
   font-weight: bold;
 }
-.condiciones{
+.condiciones {
   width: 100%;
   text-align: right;
   cursor: pointer;
@@ -424,6 +370,6 @@ html {
   font-size: 12px;
   padding-right: 22px;
 }
-.condiciones td:hover{
+.condiciones td:hover {
   color: rgb(131, 131, 131);
 }
