@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*Header*/
+header{
+    background-color:white;
+    padding: 5px;
+}
+header img,input{
+    padding: 5px;
+}
+header .accesibilidad{
+    display: inline;
+}
+.accesibilidad img{
+    float: right;
+    margin: 3px;
+}
+
+ /*Busqueda*/
+
+ .busqueda{
+float: right;
+margin: 0;
+padding: 8px;
+}
+
+.busqueda input{
+
+height: 20px;
+}
+
+.busqueda i{
+padding: 5px;
+font-size: 20px;
+}
+
+.busqueda_input{
+color: black;
+border: 0;
+outline: 0;
+width: 0;
+line-height: 40px;
+transition: right 0.4s linear;
+}
+
+.busqueda:hover > .busqueda_input{
+width: 150px;
+transition: width 0.4s linear;
+border-bottom:1px solid black;
+}
+
+/*Menu*/
+menu{
+    background-color: black;
+    color:white;
+}
+
+menu  li{
+    display: inline-block;
+    margin: 20px;
+}
+
+menu li:hover{
+    color: rgb(131, 131, 131);
+}
+menu ul{
+    text-align: center;
+}
+
+/*Submenu*/
+.submenu{
+    background-color:rgba(236, 234, 234, 0.877);
+}
+
+.submenu li{
+    display: inline-block;
+    margin: 20px;
+}
+
+.submenu ul{
+    text-align: center;
+}
+
+.submenu li p{
+    font-size: 14px;   
+    margin-top: 5px;
+}
+
+.submenu li:hover{
+    color:rgb(37, 37, 37);
+}
+
+body{
+height: 900px;
+}
