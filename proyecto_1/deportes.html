@@ -16,6 +16,7 @@
   />
 
   <body>
+    <!--Inicio de header-->
     <header>
       <img src="img/LOGO/logo_negro.png" />
       <div class="accesibilidad">
@@ -36,6 +37,8 @@
         </div>
       </div>
     </header>
+    <!--fin de header-->
+    <!--menu principal de la pagina-->
     <menu>
       <ul>
         <li>Deporte</li>
@@ -48,44 +51,50 @@
         <li>Literatura</li>
       </ul>
     </menu>
+    <!--submenu para Deportes-->
     <div class="submenu">
       <ul>
         <li>
-          <img
+          <!--fitness-->
+          <a href="#fitness"><img
             src="img/SUBMENU/DEPORTE/fitness.png"
             width="45px"
             height="45px"
-          />
-          <p>Fitness</p>
+          /></a>
+          <a href="#fitness" style="text-decoration:none ; color:black"><p>Fitness</p></a>
         </li>
         <li>
-          <img
+        <!--electronica-->
+          <a href="#electronica"><img
             src="img/SUBMENU/DEPORTE/reloj_negro.png"
             width="45px"
             height="45px"
-          />
-          <p>Electrónica deportiva</p>
+          /></a>
+          <a href="#electronica" style="text-decoration:none ; color:black"><p>Electrónica deportiva</p></a>
         </li>
         <li>
-          <img
+        <!--ocio-->
+          <a href="#ocio"><img
             src="img/SUBMENU/DEPORTE/billar.png"
             width="45px"
             height="45px"
-          />
-          <p>Recreativos y ocio</p>
+          /></a>
+          <a href="#ocio" style="text-decoration:none ; color:black"><p>Recreativos y ocio</p></a>
         </li>
       </ul>
     </div>
-
+    <!--Inicio de slider de la pagina-->
     <section class="top-slider">
       <div class="titulo"><h1>DEPORTES</h1></div>
       <div class="slider">
         <ul>
+          <!--primera imagen del slider-->
           <li>
             <div class="contenedor">
               <div class="image"></div>
             </div>
           </li>
+          <!--segunda imagen del slider-->
           <li>
             <div class="contenedor">
               <div class="image2"></div>
@@ -94,15 +103,17 @@
         </ul>
       </div>
     </section>
+    <!--inicio de las imagenes con productos de Deportes-->
     <section class="client-section">
       <div class="pm-column-container vc_col-sm-12">
         <div class="pm_column-inner">
           <div class="pm-wrapper">
             <div class="title-section">
-              
+              <!--primer apartado de ofertas por cuarentena-->
               <h2 class="title">Últimas novedades por cuarentena</h2>
               <div class="container-cards">
-                
+                <!--inicio de los cuadros de imagenes-->
+                <!--primer cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -131,6 +142,7 @@
                     </div>
                   </div>
                 </div>
+                <!--segundo cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -157,8 +169,10 @@
                   </div>
                 </div>
               </div>
+              <!--segunda seccion de la pagina: Fitness-->
               <div class="container-cards">
-                <h2 class="subtitle">En esta sección encontrarás las mejores herramienta para convertirte en la mejor versión de tí mismo</h2>
+                <a name="fitness"><h2 class="subtitle">En esta sección encontrarás las mejores herramienta para convertirte en la mejor versión de tí mismo</h2></a>
+                <!--tercer cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -186,6 +200,7 @@
                     </div>
                   </div>
                 </div>
+                <!--cuarto cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -214,6 +229,7 @@
                     </div>
                   </div>
                 </div>
+                <!--quinto cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -244,8 +260,9 @@
                     </div>
                   </div>
                 </div>
-                
-                <h2 class="subtitle">Nuestra sección de tecnología avanzada para tus necesidades deportivas dentro y fuera del hogar </h2>
+                <!--tercera seccion de la pagina: electronica deportiva-->
+                <a name="electronica"><h2 class="subtitle">Nuestra sección de tecnología avanzada para tus necesidades deportivas dentro y fuera del hogar </h2></a>
+                <!--sexto cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -271,6 +288,7 @@
                     </div>
                   </div>
                 </div>
+                <!--septimo cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -296,6 +314,7 @@
                     </div>
                   </div>
                 </div>
+                <!--octavo cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -322,7 +341,9 @@
                     </div>
                   </div>
                 </div>
-                <h2 class="subtitle">Los ratos de ocio son los mejores momentos del día para compartir con familia y amigos</h2>
+                <!--cuarta seccion de la pagina: ocio y recreativa-->
+                <a name="ocio"><h2 class="subtitle">Los ratos de ocio son los mejores momentos del día para compartir con familia y amigos</h2></a>
+                <!--noveno cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -348,11 +369,12 @@
                     </div>
                   </div>
                 </div>
+                <!--decimo cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
                       <div class="card-stars">
-                        <img class="top" src="img/Deportes/pingpong.jpg" />
+                        <img class="top" src="img/Deportes/mesa_billar.jpg" />
                         <h4 class="subtitulo">Devessport</h4>
                         <p class="description">
                           Mesa de billar profesional Cortés Devessport
@@ -373,6 +395,7 @@
                     </div>
                   </div>
                 </div>
+                <!--undecimo cuadro-->
                 <div class="card">
                   <div class="box">
                     <div class="content">
@@ -382,7 +405,7 @@
                         <p class="description">
                           Futbolín exterior Marina
                         </p>
-                        <p class="price"><span>1090,99€</span></p>
+                        <p class="price"><span>299,99€</span></p>
                       </div>
                       <p>
                         Empieza el partido con el futbolín de madera. Elige a tu compañer@ de juego y marca el primer tanto.
@@ -406,10 +429,12 @@
       </div>
     </section>
     <section class="products"></section>
-
+    <!--fin de los cuadros de imagenes-->
+    <!--inicio del footer de la pagina-->
     <footer>
       <div class="grande">
           <!--CAJA 1-->
+          <!--imagenes de servicios del corte irlandes-->
           <div class="caja1">
               <div class="caja11">
                   <ul>
@@ -444,8 +469,8 @@
                   </ul>
               </div>
           </div>
-      
           <!--CAJA 2-->
+          <!--imagenes de servicios del corte irlandes-->
           <div class="caja2">
               <table class="tabla21">
                   <tr>
@@ -471,8 +496,8 @@
                   </tr>
               </table>
           </div>
-      
           <!--CAJA 3-->
+          <!--imagenes de servicios del corte irlandes-->
           <div class="caja3">
               <table class="caja33">
               <tr>
@@ -516,6 +541,7 @@
                   </td>
               </tr> 
               </table>
+              <!--derechos de la pagina y politicas-->
               <table class="politicas">
                   <tr>
                       <td>
@@ -540,5 +566,7 @@
           </div>
       </div>     
   </footer>
+  <!--fin del footer-->
   </body>
+  <!--fin del body de la pagina de deportes-->
 </html>
