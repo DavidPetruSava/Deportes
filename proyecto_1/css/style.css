@@ -76,6 +76,22 @@ html {
   margin-right: 25%;
 }
 
+/*Animation scrool*/
+.box2{
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)),url("../img/Deportes/deportePesas.jpg");
+}
+.text1{
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight:bold;
+}
+
 .contenedor {
   width: 100%;
   height: 400px;
@@ -204,6 +220,7 @@ html {
   border: 1px solid black;
   color: white;
   background-color: #000;
+  
 }
 .bottom2 {
   background-color: #fff;
@@ -211,6 +228,8 @@ html {
   color: black;
 }
 .content {
+  background-color: #fff;
+  border-radius: 0.8rem;
   padding: 1.5rem;
 }
 .container-cards .card .box:hover {
