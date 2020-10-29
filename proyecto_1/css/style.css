@@ -77,21 +77,33 @@ html {
 }
 
 /*Animation scrool*/
-.box2{
-  height: 220px;
+.box2,
+.box3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.box2 {
+  height: 220px;
   background-size: cover;
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)),url("../img/Deportes/deportePesas.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), rgba(0, 0, 0, 0.678)),
+    url("../img/Deportes/deportePesas.jpg");
 }
-.text1{
+.box3 {
+  height: 150px;
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: #ede734;
+}
+.text1 {
   color: #fff;
-  font-size: 2.5rem;
-  font-weight:bold;
+  font-size: 2rem;
 }
-
+.text2 {
+  font-size: 2.7rem;
+}
 .contenedor {
   width: 100%;
   height: 400px;
@@ -121,6 +133,7 @@ html {
 .subtitle {
   padding-top: 3.5rem;
   padding-bottom: 2rem;
+  color: #454545;
 }
 /*Section id cliente section*/
 .vc_col-sm-12 {
@@ -139,6 +152,7 @@ html {
   text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 1.5rem 0 2.3rem 0;
+  color: #454545;
 }
 .title-section {
   padding-top: 40px;
@@ -188,11 +202,6 @@ html {
   min-width: 330px;
   height: 300px;
 }
-.comprar,
-.star {
-  padding: 5px 10px 5px 10px;
-  border-radius: 15px;
-}
 /*caja superior con efecto de box-shadow*/
 .container-cards .card .box {
   position: absolute;
@@ -220,7 +229,6 @@ html {
   border: 1px solid black;
   color: white;
   background-color: #000;
-  
 }
 .bottom2 {
   background-color: #fff;
@@ -233,7 +241,7 @@ html {
   padding: 1.5rem;
 }
 .container-cards .card .box:hover {
-  transform: translateY(-35px);
+  transform: translateY(-15px);
   box-shadow: 0 40px 70px rgba(33, 44, 33, 0.5);
 }
 
@@ -248,8 +256,6 @@ html {
 }
 
 /*FIN SLIDER*/
-
-/*algunas pruebas que estoy haciendo para las imagenes*/
 
 .contenedor1 {
   position: relative;
@@ -267,133 +273,4 @@ html {
 
 .contenedor1 img.top:hover {
   opacity: 0;
-}
-
-/*footer*/
-@keyframes modal {
-  from {
-    top: -330px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
-
-.caja1 {
-  width: 100%;
-  background-color: rgb(224, 221, 221);
-  display: inline-flex;
-  text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-.caja11 li:hover {
-  color: rgb(131, 131, 131);
-}
-.caja1 img {
-  width: 45px;
-  height: 45px;
-  text-align: center;
-}
-.caja11 li {
-  display: inline;
-  font-size: 15px;
-  padding: 30px;
-  margin-left: 135px;
-  text-align: center;
-  font-weight: bold;
-  cursor: pointer;
-}
-/*CAJA 2*/
-.caja2 {
-  width: 100%;
-  background-color: black;
-}
-.caja2 img {
-  width: 25px;
-  height: 30px;
-}
-.caja2 span {
-  color: white;
-}
-.tabla21 {
-  width: 100%;
-}
-.tabla22 {
-  width: 70%;
-}
-.tabla22 span:hover {
-  color: rgb(131, 131, 131);
-}
-.tabla23 {
-  padding-left: 36%;
-}
-.filas {
-  padding: 15px;
-  text-align: center;
-  cursor: pointer;
-  font-weight: bold;
-}
-.filas2 {
-  padding: 15px;
-  padding-top: 20px;
-  text-align: center;
-}
-.filas2 img {
-  width: 30px;
-  height: 35px;
-  cursor: pointer;
-}
-/*CAJA 3*/
-.caja3 {
-  width: 100%;
-  background-color: rgb(224, 221, 221);
-}
-.caja33 {
-  width: 100%;
-  padding: 10px;
-}
-.caja3 td {
-  padding: 5px;
-}
-.caja3 h2 {
-  font-size: 20px;
-  font: 10px;
-  font-weight: bold;
-}
-.letraPequeña {
-  font-size: 15px;
-  cursor: pointer;
-}
-.caja3 img {
-  width: 35px;
-  height: 30px;
-}
-.pagos {
-  text-align: right;
-  padding-top: 100px;
-  padding-left: 40%;
-}
-.tabla31 td:hover {
-  color: rgb(131, 131, 131);
-}
-.politicas {
-  width: 100%;
-  border-top: 1px solid rgb(131, 131, 131);
-  font-style: oblique;
-  font-weight: bold;
-}
-.condiciones {
-  width: 100%;
-  text-align: right;
-  cursor: pointer;
-  font-style: oblique;
-  font-weight: bold;
-  font-size: 12px;
-  padding-right: 22px;
-}
-.condiciones td:hover {
-  color: rgb(131, 131, 131);
 }
